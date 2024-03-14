@@ -2,10 +2,10 @@ import urllib.request
 import json
 import pprint
 
-obj = { 'APIPassword': 'qwerty' }
+obj = { 'APIPassword': '0504Taku' }
 json_data = json.dumps(obj).encode('utf8')
 
-url = 'http://localhost:18080/kabusapi/token'
+url = 'http://localhost:18081/kabusapi/token'
 req = urllib.request.Request(url, json_data, method='POST')
 req.add_header('Content-Type', 'application/json')
 
